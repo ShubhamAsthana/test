@@ -5,7 +5,10 @@ const employee = mongoose.model('Employee', {
     office: {type:String},
     salary: {type: Number}
 });
-const country = mongoose.model('country',{
+const Country = mongoose.model('Country',{
     name: {type:String}
 });
-module.exports = {employee, country};
+const city = mongoose.model('City',{
+    name: {type:String}
+});
+module.exports = { employee,Country,city};
